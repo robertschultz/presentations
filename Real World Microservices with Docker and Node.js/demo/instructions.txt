@@ -1,0 +1,28 @@
+Monolith:
+
+Get Users (GET):
+
+http://192.168.59.103:3000/user/
+
+Add New User (POST):
+
+http://192.168.59.103:3000/user/
+
+{
+  "username": "jdavis",
+  "firstName": "Jason",
+  "lastName": "Davis"
+}
+
+Get Cemeteries (GET):
+
+http://192.168.59.103:3000/cemetery/
+
+Add New Cemetery (POST):
+
+http://192.168.59.103:3000/cemetery/
+
+{
+  "name": "This is a new one",
+  "created": "rschultz"
+}

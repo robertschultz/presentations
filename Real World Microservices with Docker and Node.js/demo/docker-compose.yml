@@ -1,0 +1,18 @@
+cemetery:
+  image: node:latest
+  working_dir: /app
+  volumes:
+    - ./cemetery:/app
+  command: node /app/bin/www
+  ports:
+    - "3001:3000"
+  links:
+    - user
+user:
+  image: node:latest
+  working_dir: /app
+  volumes:
+    - ./user:/app
+  command: node /app/bin/www
+  ports:
+    - "3002:3000"
